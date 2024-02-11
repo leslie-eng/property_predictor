@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>House Price Predictor</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="static/price/style.css">
+    </head>
+    <body>
+        <img class='bck_image'src="static/price/h2.jpg">
+        <form class="main" method="POST">
+            <input type="range" min={{lon_min}} max={{lon_max}} id="slider">
+            <input type="range" min={{lat_min}} max={{lat_max}}>
+            <h3>Area in square metres: <input type="text", name='area', placeholder='200'></h3>
+            <input type="button", value="predict">
+        </form>
+       <h3>The prediction for the house based on longitude and latitude is {{prediction}}</h3>
+        <script src="" async defer></script>
+    </body>
+</html>
